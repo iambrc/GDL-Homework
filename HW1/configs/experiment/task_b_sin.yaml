@@ -1,0 +1,28 @@
+# @package _global_
+
+# To execute this experiment run:
+# python src/train.py experiment=task_b_sin
+
+defaults:
+  - override /data: sin.yaml
+  - override /model: sin.yaml
+  - override /callbacks: default.yaml
+  - override /trainer: default.yaml
+  - override /logger: wandb.yaml
+
+# 实验的所有 tags (用于实验记录的便捷搜索)
+tags: ["task_b", "sin_fit"]
+
+seed: 42
+
+trainer:
+  min_epochs: 10
+  max_epochs: 50
+  # 由于数据较简单，可以使用 cpu 或 gpu。可按需通过命令覆盖。
+
+logger:
+  wandb:
+    project: "GDL-Homework"
+    name: "task_b_sin_fit"
+    tags: ${tags}
+    group: "HW1"

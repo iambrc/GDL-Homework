@@ -1,0 +1,18 @@
+_target_: src.models.sin_module.SinLitModule
+
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 0.01
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: true
+  mode: min
+  factor: 0.5
+  patience: 10
+
+net:
+  _target_: src.models.components.sin_net.SinNet
+  hidden_size: 64
+  activation: "tanh"
