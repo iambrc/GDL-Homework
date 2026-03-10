@@ -1,0 +1,6 @@
+ignore_warnings: True
+
+# 实验配置中已指定 tags，无需交互提示
+enforce_tags: False
+
+print_config: True

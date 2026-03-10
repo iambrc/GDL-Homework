@@ -1,0 +1,7 @@
+_target_: src.data.mnist_datamodule.MnistDataModule
+
+data_dir: ${paths.data_dir}
+batch_size: 128
+train_val_split: 0.9   # 54000 训练 / 6000 验证（从 60000 训练集中拆分）
+num_workers: 0
+pin_memory: False

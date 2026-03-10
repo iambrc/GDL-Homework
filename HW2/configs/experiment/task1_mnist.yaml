@@ -1,0 +1,25 @@
+# @package _global_
+
+# 运行方式：python HW2/src/train.py experiment=task1_mnist
+
+defaults:
+  - override /data: mnist.yaml
+  - override /model: mnist_mlp.yaml
+  - override /callbacks: default.yaml
+  - override /trainer: default.yaml
+  - override /logger: wandb.yaml
+
+tags: ["task1", "mnist", "mlp"]
+
+logger:
+  wandb:
+    project: "GDL-Homework"
+    name: "task1_mnist_mlp"
+    tags: ${tags}
+    group: "HW2"
+
+seed: 42
+
+trainer:
+  min_epochs: 5
+  max_epochs: 20

@@ -1,0 +1,21 @@
+_target_: src.models.mnist_module.MnistLitModule
+
+optimizer:
+  _target_: torch.optim.Adam
+  _partial_: true
+  lr: 0.001
+  weight_decay: 1e-4
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: true
+  mode: min
+  factor: 0.5
+  patience: 5
+
+net:
+  _target_: src.models.components.mlp_net.MlpNet
+  input_size: 784
+  hidden_sizes: [256, 128]
+  output_size: 10
+  dropout: 0.2
