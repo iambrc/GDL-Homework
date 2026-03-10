@@ -156,4 +156,4 @@ configs/local/default.yaml
 
 .hydra/
 wandb/
-MNIST/
+HW2/data/MNIST/
