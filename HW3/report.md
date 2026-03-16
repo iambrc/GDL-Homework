@@ -36,6 +36,13 @@ Kaggle Dogs vs. Cats 数据集是经典的二分类图像基准，来源于 Kagg
 
 **DataLoader 配置**：`batch_size=64`，`num_workers=4`，训练集 `shuffle=True`。
 
+权重：
+链接：https://pan.ustc.edu.cn/share/index/e353a89fb30f4c23a9f4
+放到 logs/train/runs/2026-03-15_09-31-18/checkpoints/
+
+链接：https://pan.ustc.edu.cn/share/index/9569e067f1d346e6b64a
+放到 outputs/finetune/
+
 ---
 
 ## 任务一：从零搭建 CNN（train_scratch.py）
