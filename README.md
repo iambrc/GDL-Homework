@@ -24,7 +24,7 @@ cd GDL-Homework
 conda create -n gdl python=3.12
 conda activate gdl
 
-# install pytorch
+# install pytorch (example)
 pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu118
 
 # install requirements
@@ -34,4 +34,5 @@ pip install -r requirements.txt
 ## Homework Report
 
 * [Assignment 1](HW1/report.md)
-* TODO......
+* [Assignment 2](HW2/report.md)
+* [Assignment 3](HW3/report.md)

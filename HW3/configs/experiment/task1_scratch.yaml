@@ -1,0 +1,25 @@
+# @package _global_
+
+# 运行方式：python HW3/src/train_scratch.py experiment=task1_scratch
+
+defaults:
+  - override /data: catdog.yaml
+  - override /model: catdog_cnn.yaml
+  - override /callbacks: default.yaml
+  - override /trainer: default.yaml
+  - override /logger: wandb.yaml
+
+tags: ["task1", "catdog", "cnn", "scratch"]
+
+logger:
+  wandb:
+    project: "GDL-Homework"
+    name: "task1_catdog_cnn_scratch"
+    tags: ${tags}
+    group: "HW3"
+
+seed: 42
+
+trainer:
+  min_epochs: 5
+  max_epochs: 30

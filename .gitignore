@@ -157,3 +157,9 @@ configs/local/default.yaml
 .hydra/
 wandb/
 HW2/data/MNIST/
+HW3/data/dogs-vs-cats/
+
+# Model weights & checkpoints
+*.pth
+*.ckpt
+HW3/logs/

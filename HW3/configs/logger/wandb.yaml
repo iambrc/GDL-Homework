@@ -1,0 +1,12 @@
+wandb:
+  _target_: lightning.pytorch.loggers.wandb.WandbLogger
+  save_dir: "${paths.output_dir}"
+  offline: False
+  id: null
+  anonymous: null
+  project: "GDL-Homework"
+  log_model: False
+  prefix: ""
+  group: "HW3"
+  tags: []
+  job_type: ""
