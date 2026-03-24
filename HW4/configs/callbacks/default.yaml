@@ -1,0 +1,14 @@
+defaults:
+  - model_checkpoint
+  - model_summary
+  - rich_progress_bar
+  - _self_
+
+model_checkpoint:
+  dirpath: ${paths.output_dir}/checkpoints
+  filename: "epoch_{epoch:03d}-bleu_{val/bleu:.2f}"
+  monitor: "val/bleu"
+  mode: "max"
+  save_last: True
+  save_top_k: 1
+  auto_insert_metric_name: False

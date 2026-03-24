@@ -1,0 +1,25 @@
+# @package _global_
+
+# 运行方式：python HW4/src/train.py experiment=enzh_translation
+
+defaults:
+  - override /data: wmt19_enzh.yaml
+  - override /model: marian_enzh.yaml
+  - override /callbacks: default.yaml
+  - override /trainer: default.yaml
+  - override /logger: wandb.yaml
+
+tags: ["hw4", "translation", "enzh", "marian"]
+
+logger:
+  wandb:
+    project: "GDL-Homework"
+    name: "hw4_enzh_translation"
+    tags: ${tags}
+    group: "HW4"
+
+seed: 42
+
+trainer:
+  min_epochs: 1
+  max_epochs: 3

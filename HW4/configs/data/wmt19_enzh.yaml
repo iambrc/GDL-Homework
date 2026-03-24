@@ -1,0 +1,12 @@
+_target_: src.data.translation_datamodule.TranslationDataModule
+
+model_name: "Helsinki-NLP/opus-mt-en-zh"
+dataset_name: "wmt19"
+dataset_config: "zh-en"
+lang_prefix: ">>cmn<< "
+num_samples: 50000
+max_length: 128
+batch_size: 16
+num_workers: 4
+pin_memory: True
+seed: 42

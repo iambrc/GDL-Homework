@@ -163,3 +163,4 @@ HW3/data/dogs-vs-cats/
 *.pth
 *.ckpt
 HW3/logs/
+HW4/logs/

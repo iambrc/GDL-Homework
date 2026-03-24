@@ -36,3 +36,4 @@ pip install -r requirements.txt
 * [Assignment 1](HW1/report.md)
 * [Assignment 2](HW2/report.md)
 * [Assignment 3](HW3/report.md)
+* [Assignment 4](HW4/report.md)
